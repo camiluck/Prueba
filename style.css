@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bimbo-blue: #004b8d;
+    --bimbo-light-blue: #009fdf;
+    --bimbo-green: #76b82a;
+    --bimbo-yellow: #ffd200;
+    --light-gray: #f6f8fa;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: var(--bimbo-blue);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Contenedor de métricas */
+.metrics-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: var(--bimbo-blue);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.metrics-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.metric-card {
+    background-color: #f0f7fa;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    width: 120px;
+    height: 120px;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    line-height: 1;
+}
+
+.metric-label {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.2;
+}
+
+/* Colores de métricas */
+.metric-1 {
+    background-color: #e6f0f6;
+}
+
+.metric-1 .metric-value {
+    color: var(--bimbo-blue);
+}
+
+.metric-2 {
+    background-color: #effaef;
+}
+
+.metric-2 .metric-value {
+    color: var(--bimbo-green);
+}
+
+.metric-3 {
+    background-color: #fff9e5;
+}
+
+.metric-3 .metric-value {
+    color: #e6b800;
+}
+
+.metric-4 {
+    background-color: #e5f5fa;
+}
+
+.metric-4 .metric-value {
+    color: var(--bimbo-light-blue);
+}
+
+/* Estilos de gráficos */
+.chart-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-title {
+    color: var(--bimbo-blue);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.chart-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid de gráficos */
+.chart-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.chart-row:last-child {
+    margin-bottom: 0;
+}
+
+.chart-col {
+    flex: 1;
+}
+
+/* Altura personalizada */
+.chart-col:nth-child(2) .chart-container {
+    height: 450px;
+}
+
+.footer {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .metrics-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .chart-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .metrics-grid {
+        gap: 15px;
+    }
+    
+    .metric-card {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .metrics-grid {
+        gap: 10px;
+    }
+    
+    .metric-card {
+        width: 90px;
+        height: 90px;
+        padding: 5px;
+    }
+    
+    .metric-value {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    
+    .metric-label {
+        font-size: 9px;
+    }
+}
