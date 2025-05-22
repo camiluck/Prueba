@@ -1,71 +1,92 @@
-<div class="container">
-    <div class="header">
-        <h1>Reporte de Cobertura de Visitas - Bimbo Argentina</h1>
-        <p>Período: 19 de abril al 19 de mayo de 2025</p>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
 
-    <div class="metrics-container">
-        <h2 class="section-title">Resumen de Métricas Clave</h2>
-        <div class="metrics-grid">
-            <div class="metric-card metric-1">
-                <div class="metric-value">4,211</div>
-                <div class="metric-label">Total Actividades</div>
-            </div>
-            <div class="metric-card metric-2">
-                <div class="metric-value">75</div>
-                <div class="metric-label">Locales Visitados</div>
-            </div>
-            <div class="metric-card metric-3">
-                <div class="metric-value">931</div>
-                <div class="metric-label">Oportunidades</div>
-            </div>
-            <div class="metric-card metric-4">
-                <div class="metric-value">131.6</div>
-                <div class="metric-label">Promedio por Supervisor</div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Cobertura de Visitas - Bimbo Argentina</title>
+    <!-- Agregar el enlace al archivo CSS si tienes uno, por ejemplo: -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- También puedes usar un CDN para los estilos (si no tienes CSS personalizado) -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Reporte de Cobertura de Visitas - Bimbo Argentina</h1>
+            <p>Período: 19 de abril al 19 de mayo de 2025</p>
         </div>
-    </div>
 
-    <!-- Gráficos -->
-    <div class="chart-row">
-        <div class="chart-col">
-            <div class="chart-container">
-                <h3 class="chart-title">Top 10 Supervisores por Visitas</h3>
-                <div class="chart-wrapper">
-                    <canvas id="supervisoresChart"></canvas>
+        <div class="metrics-container">
+            <h2 class="section-title">Resumen de Métricas Clave</h2>
+            <div class="metrics-grid">
+                <div class="metric-card metric-1">
+                    <div class="metric-value">4,211</div>
+                    <div class="metric-label">Total Actividades</div>
+                </div>
+                <div class="metric-card metric-2">
+                    <div class="metric-value">75</div>
+                    <div class="metric-label">Locales Visitados</div>
+                </div>
+                <div class="metric-card metric-3">
+                    <div class="metric-value">931</div>
+                    <div class="metric-label">Oportunidades</div>
+                </div>
+                <div class="metric-card metric-4">
+                    <div class="metric-value">131.6</div>
+                    <div class="metric-label">Promedio por Supervisor</div>
                 </div>
             </div>
         </div>
-        <div class="chart-col">
-            <div class="chart-container">
-                <h3 class="chart-title">Actividades Principales</h3>
-                <div class="chart-wrapper">
-                    <canvas id="actividadesChart"></canvas>
+
+        <!-- Gráficos -->
+        <div class="chart-row">
+            <div class="chart-col">
+                <div class="chart-container">
+                    <h3 class="chart-title">Top 10 Supervisores por Visitas</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="supervisoresChart"></canvas>
+                    </div>
                 </div>
             </div>
+            <div class="chart-col">
+                <div class="chart-container">
+                    <h3 class="chart-title">Actividades Principales</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="actividadesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-col">
+                <div class="chart-container">
+                    <h3 class="chart-title">Tendencia Diaria de Visitas</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="tendenciaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-col">
+                <div class="chart-container">
+                    <h3 class="chart-title">Principales Oportunidades Detectadas</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="oportunidadesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Visualización generada con datos hasta el 19 de mayo de 2025 | Grupo Bimbo Argentina</p>
         </div>
     </div>
 
-    <div class="chart-row">
-        <div class="chart-col">
-            <div class="chart-container">
-                <h3 class="chart-title">Tendencia Diaria de Visitas</h3>
-                <div class="chart-wrapper">
-                    <canvas id="tendenciaChart"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="chart-col">
-            <div class="chart-container">
-                <h3 class="chart-title">Principales Oportunidades Detectadas</h3>
-                <div class="chart-wrapper">
-                    <canvas id="oportunidadesChart"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Agregar el script de Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tu script personalizado de JS -->
+    <script src="js/main.js"></script>
+</body>
 
-    <div class="footer">
-        <p>Visualización generada con datos hasta el 19 de mayo de 2025 | Grupo Bimbo Argentina</p>
-    </div>
-</div>
+</html>
