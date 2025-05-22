@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +14,7 @@
     --light-gray: #f6f8fa;
 }
 
+/* Body */
 body {
     background-color: var(--light-gray);
     color: #333;
@@ -20,6 +22,7 @@ body {
     font-size: 16px;
 }
 
+/* Container */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -27,6 +30,7 @@ body {
     padding: 20px;
 }
 
+/* Header */
 .header {
     text-align: center;
     margin-bottom: 30px;
@@ -43,7 +47,7 @@ body {
     font-size: 16px;
 }
 
-/* Contenedor de métricas */
+/* Metrics Section */
 .metrics-container {
     background-color: white;
     border-radius: 8px;
@@ -96,7 +100,7 @@ body {
     line-height: 1.2;
 }
 
-/* Colores de métricas */
+/* Metric Card Colors */
 .metric-1 {
     background-color: #e6f0f6;
 }
@@ -129,7 +133,7 @@ body {
     color: var(--bimbo-light-blue);
 }
 
-/* Estilos de gráficos */
+/* Chart Containers */
 .chart-container {
     background-color: white;
     border-radius: 8px;
@@ -158,7 +162,7 @@ body {
     justify-content: center;
 }
 
-/* Grid de gráficos */
+/* Grid of Charts */
 .chart-row {
     display: flex;
     gap: 15px;
@@ -173,11 +177,12 @@ body {
     flex: 1;
 }
 
-/* Altura personalizada */
+/* Custom Height for the Second Chart */
 .chart-col:nth-child(2) .chart-container {
     height: 450px;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 5px 0;
@@ -186,7 +191,7 @@ body {
     margin-top: 5px;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 992px) {
     .metrics-grid {
         flex-wrap: wrap;
